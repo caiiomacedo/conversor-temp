@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,500&family=Mooli&family=Raleway:wght@100;300;500&display=swap');
+
+body{
+    font-family: raleway, sans-serif;
+    background: linear-gradient(to top, #ed0808, #7b0101);
+    margin: 4px;
+    padding: 8px;
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+form{
+    font-family: Mooli, sans-serif;
+    background-color: rgba(213, 210, 210, 0.8);
+    padding: 16px;
+    border-radius: 4px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.5); 
+}
+
+h1{
+    color:rgb(9, 8, 8)
+    
+}
+
+h2{
+    color: #fafaf8;
+}
+
+
+input, select{
+width: 90%;
+padding: 8px;
+border: 1px solid#ccc;
+border-radius: 8px;
+margin-bottom: 16px;
+margin-top: 4px;
+box-sizing: border-box;
+}
+
+label{
+    display: block;
+}
+
+header {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11bafd;
+    padding: 20px ;
+    display: block
+    
+  }
+  nav {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  checkbox{
+        margin:0 12px 0 0;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+      }
+
+      image{
+        margin: 0;
+        width: 50%;
+        height: 30px;
+        align-items: center;
+      }
+ 

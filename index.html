@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperaturas</title>
+    <header>
+        
+<h1><image src="https://cdn3.iconfinder.com/data/icons/weather-free-1/32/Weather_Free_Filled_Outline_warm-termometer-weather-hot-temperature-512.png" widht="200", height="50"; alig="right"></image>TEMPUR</h1>
+       
+
+       <nav>
+            
+          <a href='/home'>Home</a> 
+          <a href='/sobre'>Sobre</a>
+          <a href='/contato'>Contato</a>
+          
+        </nav>
+      </header>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h2>Conversor de temperaturas</h2>
+    
+    <label for="nome">Nome:</label>  
+    <input type="text" id="nome" name="nome" required placeholder="Nome completo"/>
+
+    <label for="datadenascimento">Data de Nascimento:</label>
+    <input type="date" id="nascimento" name="nascimento"/>
+    
+    <input type="checkbox" id="estudante" name="estudante" value="estudante">
+    <label for="estudante"> Estudante</label><br>
+    <input type="checkbox" id="profissional" name="profissional" value="profissional">
+    <label for="profissional"> Profissional na área</label><br>
+
+    <label for="quantity">Quantas vezes você consulta a temperatura (entre 1 a 7):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="7">
+
+  
+
+    <form id="conversorTemperaturas">
+        <label for="temperaturaInicial">Temperatura Inicial:</label>
+        <select id="temperaturaInicial" required>
+            <option value="" disabled selected>Selecione...</option>
+            <option value="Celsius">Celsius (C°)</option>
+            <option value="Fahrenheit">Fahrenheit (F°)</option>
+            <option value="Kelvin">Kelvin (K°)</option>
+        </select>
+    <label for="temperaturaFinal">Temperatura Final:</label>
+    <select id="temperaturaFinal" required>
+        <option value="" disabled selected>Selecione...</option>
+        <option value="Celsius">Celsius (C°)</option>
+        <option value="Fahrenheit">Fahrenheit (F°)</option>
+        <option value="Kelvin">Kelvin (K°)</option>
+    </select>
+    <label for="valor">Temperatura a ser convertido:</label>
+    <input type="number" id="valor" step="0.1" placeholder="Ex: 35°">
+<br/>    <button type="button" id="calcular" onclick="calcularTemp(event)">Calcular🌡</button>
+<div id="resultado"></div>
+    </form>
+    <script src='js/conversao.js'></script>
+</body>
+</html>
