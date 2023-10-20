@@ -1,79 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,500&family=Mooli&family=Raleway:wght@100;300;500&display=swap');
-
-body{
-    font-family: raleway, sans-serif;
-    background: linear-gradient(to top, #ed0808, #7b0101);
-    margin: 4px;
-    padding: 8px;
-    display:flex; 
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-form{
-    font-family: Mooli, sans-serif;
-    background-color: rgba(213, 210, 210, 0.8);
-    padding: 16px;
-    border-radius: 4px;
-    width: 50%;
-    box-shadow: 0 4px 8px rgb(0,0,0,0.5); 
+body {
+  font-family: 'Playpen Sans', cursive;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);  
+  height: 100vh;
 }
 
-h1{
-    color:rgb(9, 8, 8)
-    
+#conversorTemperaturas {
+  font-family: 'Playpen Sans', cursive;
+  padding: 16px;
+  border-radius: 4px;
+  width: 80%;
 }
 
-h2{
-    color: #fafaf8;
+h1, h2 {
+  color: rgb(9, 8, 8);
+  color: #fafaf8;
 }
 
-
-input, select{
-width: 90%;
-padding: 8px;
-border: 1px solid#ccc;
-border-radius: 8px;
-margin-bottom: 16px;
-margin-top: 4px;
-box-sizing: border-box;
+select {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid#ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-label{
-    display: block;
+label {
+  display: block;
 }
 
 header {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #11bafd;
-    padding: 20px ;
-    display: block
-    
-  }
-  nav {
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: absolute;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
 
-  checkbox{
-        margin:0 12px 0 0;
-        vertical-align: middle;
-        position: relative;
-        top: -1px;
-      }
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;  
+}
 
-      image{
-        margin: 0;
-        width: 50%;
-        height: 30px;
-        align-items: center;
-      }
- 
+checkbox {
+  margin: 0 12px 0 0;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+image {
+  margin: 0;
+  width: 50%;
+  height: 30px;
+  align-items: center;
+}
+
+input{
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+#container-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#container{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  min-width: 30%;
+  width: 40%;
+}
+
+.formControl{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
